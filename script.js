@@ -1,5 +1,3 @@
-'use strict'
-
 const grande = document.querySelector('.grande')
 const punto = document.querySelector('.punto')
 
