@@ -1,12 +1,17 @@
 body{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 #navvy{
-    width: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 ul, ol{
     list-style: none;
@@ -43,52 +48,48 @@ ul, ol{
     color: white;
 }
 
-.carrusel{
-    padding-top: 10px;
-    width:  100%;
+.carrousel{
+    width: 90%;
     max-width: 120em;
-    background-color: aquamarine;
-
+    padding: 2em;
+    background-color: aqua;
 }
 
-.carrusel .grande{
+.carrousel .grande{
     width: 200%;
-    background-color: blanchedalmond;
+    padding: 2em;
+    background-color: orange;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    padding: 1em;
 
     transition: all .5s ease;
-    transform: translateX(-50%);
+    transform: translateX(0%);
 }
 
-.carrusel .img{
-    width: calc(100%/2);
-    background-color: brown;
-    min-height: 10vh;
+.carrousel .img{
+    width: calc( 100% / 2);
+    background-color: lime;
 }
 
-.carrusel .puntos{
+.carrousel .puntos{
     width: 100%;
-    background-color: blue;
-    padding: 0.5em;
+    background-color: red;
+    padding: 1em;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
-
-.carrusel .punto{
+.carrousel .punto{
     width: 2em;
     height: 2em;
-    margin: 1em 1em 0;
-    background-color: coral;
-  
+    background-color: blue;
+    margin: 1em;
 }
 
-.carrusel .punto.apretar{
-    background-color: rgb(102, 116, 42);
+.carrousel .punto.activo{
+    background-color: orangered;
 }

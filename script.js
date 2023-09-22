@@ -1,25 +1,29 @@
-const grande = document.querySelector('.grande')
-const punto = document.querySelector('.punto')
+'use strict'
 
-// cuando hago click en cada punto
-    //saber la posiciond e se punto
-    //aplicar un transform stranslateX al grande
-    //quitar la clase activo de todos puntos
-    //anaduir la clase actuvi al punto q hemos hecho click
+const grande    = document.querySelector('.grande')
+const punto     = document.querySelectorAll('.punto')
+
+// Cuando CLICK en punto
+    // Saber la posicion de ese punto
+    // Aplicar un transform translateX al grande
+    // QUITAR la clase activo de TODOS puntos
+    // AÑADIR la clase activo al punto que hemos hecho CLICK
 
 
+    punto.forEach( ( cadaPunto , i )=> {
+    punto[i].addEventListener('click',()=>{
 
-punto.forEach( (cadaPunto , i)=> {
-    punto[i].addEventlistener('click',()=>{
+       
+        let posicion  = i
+        let operacion = posicion * -50
 
-        let posicion = i
-        let mover = posicion * -50
+        grande.style.transform = `translateX(${ operacion }%)`
 
-        grande.style.transform = `translateX(${mover}%)`
-
-        punto.forEach((cadaPunto ,  i)=> {
-            punto[i].classList.remove('apretar')
+        
+        punto.forEach( ( cadaPunto , i )=>{
+            punto[i].classList.remove('activo')
         })
-        punto[i].classList.add("apretar")
+        punto[i].classList.add('activo')
+
     })
 })
