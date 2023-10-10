@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/fotos/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/e1044676e1.js" crossorigin="anonymous"></script>
+    <title>Destino Norte</title>
+</head>
+
+<body>
+    <header class="headerindex">
+        <a href="#" class="logo">Destino Norte</a>
+        <label for="menu"><img src="" alt=""></label>
+        <nav class="navbar">
+            <ul>
+                <li class="enlaces"><a href="#">Viajes en Avion</a></li>
+                <li class="enlaces"><a href="#">Viajes en Micro</a></li>
+                <li class="enlaces"><a href="#"><span class="icon-menu fas fa-bars" id="btn-menu"></span> Destinos</a>
+                    <ul>
+                        <li><a class="provincias" href="#">Salta</a></li>
+                        <li><a class="provincias" href="#">Catamarca</a></li>
+                        <li><a class="provincias" href="#">Stgo del Estero</a></li>
+                        <li><a class="provincias" href="#">Misiones</a></li>
+                        <li><a class="provincias" href="#">Jujuy</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="divindex">
+        <div class="form">
+            <p class="inicia">Inicia Sesion</p>
+            <form action="https://formspree.io/f/meqbowrj" method="post">
+                <div class="row">
+                    <div class="col">
+                        <label class="letrasform">Nombre</label>
+                        <input class="input1" type="text" placeholder="ingrese Nombre" required>
+                    </div>
+                    <div class="col">
+                        <label class="letrasform">Apellido</label>
+                        <input class="input1" type="text" placeholder="ingrese Apellido" required>
+                    </div>
+                </div>
+                <label class="letrasform"> Email:</label>
+                <input class="input1" type="email" input placeholder="Ingrese Email" required>
+                <label class="letrasform">Contraseña:</label>
+                <input class="input1" type="password" placeholder="Ingrese Contraseña" required>
+                <br>
+                <input class="enviar" type="submit">
+            </form>
+        </div>
+        <h1 class="titular">BIENVENIDO A DESTINO NORTE</h1>
+
+        <h2 class="descripcion">La mejor pagina para programar y contratar
+            tus vacaciones a las montañas
+        </h2>
+        <p class="aclaracion">Trabajando de la mano de Despegar, FlyBondi y Al Mundo
+            te traemos las mejores ofertas, economicas, intermedias y completas
+            para que disfrutes sin pagar de más, ademas si es tu primera vez
+            yendo al norte te brindamos un asesoramiento mostrandote lo mas tipico de cada provincia.
+        <p class="orden">A continuacion le pediremos que eliga una de las provincias destino para que le brindemos
+            informacion y ofertas de viaje</p>
+        </p>
+        
+    </div>
+    <div class="contenido">
+        <div class="trabajos">
+            <div class="imagendos" style="background-image: url(/fotos/tucuman.jpg)">
+                <div class="textos">
+                    <a href="entradajuego.html">
+                        <p class="letrasindex"></p>
+                    </a>
+                </div>
+            </div>
+            <div class="trabajos2">
+                <div class="imagendos" style="background-image: url(/fotos/salta.jpg)">
+                    <div class="textos">
+                        <a href="entradajuego.html">
+                            <p class="letrasindex2"></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="trabajos2">
+                <div class="imagendos" style="background-image: url(/fotos/jujuy.jpg)">
+                    <div class="textos">
+                        <a href="entradajuego.html">
+                            <p class="letrasindex3"></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="trabajos2">
+                <div class="imagendos" style="background-image: url(/fotos/catamarca.jpg)">
+                    <div class="textos">
+                        <a href="entradajuego.html">
+                            <p class="letrasindex4"></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contenido">
+        <div class="trabajos">
+            <div class="imagendos" style="background-image: url(/fotos/chaco.jpg)">
+                <div class="textos">
+                    <a href="entradajuego.html">
+                        <p class="letrasindex5"></p>
+                    </a>
+                </div>
+            </div>
+            <div class="trabajos2">
+                <div class="imagendos" style="background-image: url(/fotos/estero.jpg)">
+                    <div class="textos">
+                        <a href="entradajuego.html">
+                            <p class="letrasindex6"></p>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        <div class="trabajos2">
+            <div class="imagendos" style="background-image: url(/fotos/formosa.jpg)">
+                <div class="textos">
+                    <a href="entradajuego.html">
+                        <p class="letrasindex7"></p>
+                    </a>
+                </div>
+            </div>
+    </div>
+    <div class="trabajos2">
+        <div class="imagendos" style="background-image: url(/fotos/la\ rioja.jpg)">
+            <div class="textos">
+                <a href="entradajuego.html">
+                    <p class="letrasindex8"></p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
