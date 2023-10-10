@@ -1,0 +1,20 @@
+.btn-primary {
+background-color: grey;
+border: 3px violet solid;
+}
+.verde
+{
+    background-color: lime;
+    border: 1px orange solid;
+}
+.verdeclaro{
+    background-color: rgb(110, 209, 110);
+}
+.violeta
+{
+    background-color: rgb(124, 44, 148);
+}
+.card-img-top
+{
+width: 200px;
+}
