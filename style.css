@@ -1,4 +1,5 @@
 
+
 *{
 margin: 0;
 padding: 0;
@@ -9,62 +10,74 @@ box-sizing: border-box ;
 body{
    background-repeat: no-repeat;
    background-image: url(/fotos/cielo.jpg);
-   background-size: 1300px 1500px;
+   background-size: 100%;
 }
  .headerindex{
-    border-top: 3px solid black;
-    margin-top: 10px;
+    /*border-top: 3px solid black;
+    margin-top: 10px;*/
+    min-height: 80px;
     position: relative;
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgb(61, 195, 212);
-    box-shadow:  0 5px 3px black;
-    padding: 10px;
+    background-color: rgb(33, 98, 25);
+    box-shadow:  0 5px 3px rgb(63, 34, 3);
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
  }
- .headerindex .logo{
-    width: 15%;
+ .headerindex .logo{  
+    align-items: center;
+    display: flex;
     padding-left: 10px;
     text-decoration: none;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 25px;
-    color: rgb(255, 255, 255);
-    text-shadow: -2px 2px 1px black;
+    color: rgb(173, 128, 45);
+    text-shadow: -2px 3px 1px black;
  }
+
+.headerindex .logo img{
+  height: 50px;
+  margin-right: 10px;
+ }
+
  .headerindex .navbar ul {
-    margin-right: 550px;
-    list-style: none;
-  
- 
+  list-style: none;
+  margin-right: 300px;
  }
+
  .headerindex .navbar ul li {
     position: relative;
     float: left;
+   
+    padding-right: 10px;
+    padding-left: 10px;
  }
  .headerindex .navbar ul .enlaces {
-    border-radius: 0px 30px ;
-    background-color: rgba(196, 196, 196, 0.596);
-    padding: 10px;
-    border: 2px solid rgb(37, 37, 37);
-    text-shadow: -1px 2px 1px black;
-    margin-right: 25px;
+    border-radius: 30px 30px ;
+    background-color:rgb(13, 79, 14);
+    padding: 15px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: 2px solid rgb(0, 0, 0);
+    /*text-shadow: -1px 2px 1px black;*/
+    margin-right: 80px;
     font-family: 'Signika Negative', sans-serif;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     display: block;
  }
  .headerindex .navbar ul li a{
     font-family: 'Signika Negative', sans-serif;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     display: block;
  }
  .headerindex .navbar ul li{
@@ -72,7 +85,7 @@ body{
 
 }
  .headerindex .navbar ul li:hover {
-    background-color: rgb(41, 155, 231);
+    background-color: rgb(21, 150, 28);
     transition: all 0.5s;
 
  }
@@ -102,13 +115,30 @@ margin-top: 10px;
  .headerindex .navbar ul li:focus-within > ul ,
  .headerindex .navbar ul li:hover > ul {
     display: initial;
-
  }
+
+@media (max-width:700px){
+  .headerindex{
+    flex-direction: column;
+    
+  }
+
+  nav .navbar{
+    padding: 10px 0px ;
+  }
+}
+
+@media (max-width:1485px){
+
+  .headerindex .navbar ul {
+    margin-right: 0px;
+  }
+}
 
 .divindex
 {
    background-repeat: no-repeat;
-   background-size: 1200px 600px;
+   background-size: 100%;
    background-image: url(/fotos/avion.jpg);
    height: 550px;
     width: 98%;
@@ -118,11 +148,13 @@ margin-top: 10px;
     border-radius: 30px;
     box-shadow: 0px 5px 2px black;
 }
+
 .fondoindex
 {
     width: 1194px;
     height: 900px;
 }
+
 .titular
 {
    text-shadow: 0px 4px 2px black;
@@ -133,13 +165,14 @@ margin-top: 10px;
    font-family: 'Signika Negative', sans-serif;
 width: 67%;
 }
+
 .descripcion
 {
 
    padding: 10px;
    border-radius: 20px 0px;
    padding-left: 10px;
-   background-color: rgba(61, 194, 212, 0.815);
+   background-color: rgba(33, 98, 25, 0.815);
    border: 2px solid black;
    text-shadow: -2px 2px 1px black;
    color: #eeeeee;
@@ -149,35 +182,41 @@ width: 67%;
    font-family: 'Signika Negative', sans-serif;
 margin-left: 30px;
 }
+
 .aclaracion
 {
-   padding: 10px;
-   border-radius: 20px 0px;
-   text-shadow: 0px 4px 2px black;
-   background-color: rgba(61, 194, 212, 0.815);
-   border: 2px solid black;
-   text-shadow: -2px 2px 1px black;
-   color: #eeeeee;
-      width: 67%;
-   margin-top: 20px;
-   margin-left: 30px;
-font-size: 30px;
-font-family: 'Signika Negative', sans-serif;
+  padding: 10px;
+  border-radius: 20px 0px;
+  text-shadow: 0px 4px 2px black;
+  background-color: rgba(33, 98, 25, 0.815);
+  border: 2px solid black;
+  text-shadow: -2px 2px 1px black;
+  color: #eeeeee;
+  width: 67%;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 30px;
+  font-family: 'Signika Negative', sans-serif;
+}
 
+.orden{
+  border-radius: 20px 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 10px;
+  background-color: rgba(33, 98, 25, 0.815);
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid black;
+  text-shadow: -2px 1px 1px black;
+  color: #eeeeee;
+  margin-top: 30px;
+  width: 100%;
+  font-size: 26px;
+  font-family: 'Signika Negative', sans-serif;
 }
-.orden
-{
-   padding: 10px;
-   background-color: rgba(61, 194, 212, 0.815);
- border-top: 2px solid black;
- border-bottom: 2px solid black;
-   text-shadow: -2px 1px 1px black;
-   color: #eeeeee;
-   margin-top: 30px;
-   width: 100%;
-   font-size: 22px;
-   font-family: 'Signika Negative', sans-serif;
-}
+
 .form 
 {
    margin-right: 30px;
