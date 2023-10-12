@@ -20,7 +20,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgb(33, 98, 25);
+    background-color: rgb(14, 83, 15);
     box-shadow:  0 5px 3px rgb(63, 34, 3);
     padding: 8px;
     display: flex;
@@ -59,7 +59,7 @@ body{
  }
  .headerindex .navbar ul .enlaces {
     border-radius: 30px 30px ;
-    background-color:rgb(13, 79, 14);
+    background-color:rgb(20, 109, 23);
     padding: 15px;
     padding-left: 22px;
     padding-right: 22px;
@@ -71,7 +71,6 @@ body{
     font-size: 20px;
     display: flex;
     justify-content: space-between;
-    color: rgb(0, 0, 0);
     display: block;
  }
  .headerindex .navbar ul li a{
@@ -135,11 +134,134 @@ margin-top: 10px;
   }
 }
 
+.headerindex2{
+  /*border-top: 3px solid black;
+  margin-top: 10px;*/
+  min-height: 80px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(14, 83, 15);
+  box-shadow:  0 5px 3px rgb(63, 34, 3);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.headerindex2 .logo{  
+  align-items: center;
+  display: flex;
+  padding-left: 10px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(173, 128, 45);
+  text-shadow: -2px 3px 1px black;
+}
+
+.headerindex2 .logo img{
+height: 50px;
+margin-right: 10px;
+}
+
+.headerindex2 .navbar ul {
+list-style: none;
+margin-right: 300px;
+}
+
+.headerindex2 .navbar ul li {
+  position: relative;
+  float: left;
+ 
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.headerindex2 .navbar ul .enlaces {
+  border-radius: 30px 30px ;
+  background-color:rgb(20, 109, 23);
+  padding: 15px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: 2px solid rgb(0, 0, 0);
+  /*text-shadow: -1px 2px 1px black;*/
+  margin-right: 80px;
+  font-family: 'Signika Negative', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  display: block;
+}
+.headerindex2 .navbar ul li a{
+  font-family: 'Signika Negative', sans-serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: block;
+}
+.headerindex2 .navbar ul li{
+ background-color: rgb(41, 155, 231);
+
+}
+.headerindex2 .navbar ul li:hover {
+  background-color: rgb(21, 150, 28);
+  transition: all 0.5s;
+
+}
+.headerindex2 .navbar ul li ul {
+margin-top: 10px;
+  position: absolute;
+  left: 0%;
+  width: 150px;
+  display: none;
+}
+.headerindex2 .navbar ul li ul .provincias {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.headerindex2 .navbar ul li ul li {
+  padding: 4px;
+  background-color: rgba(53, 53, 53, 0.89);
+  border: 2px solid black;
+  width: 100%;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+.headerindex2 .navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+.headerindex2 .navbar ul li:focus-within > ul ,
+.headerindex2 .navbar ul li:hover > ul {
+  display: initial;
+}
+
+@media (max-width:700px){
+  .headerindex2{
+    flex-direction: column;
+    
+  }
+
+  nav .navbar{
+    padding: 10px 0px ;
+  }
+}
+
+@media (max-width:1485px){
+
+  .headerindex2 .navbar ul {
+    margin-right: 0px;
+  }
+}
+
 .divindex
 {
    background-repeat: no-repeat;
    background-size: 100%;
-   background-image: url(/fotos/avion.jpg);
+   background-image: url(/fotos/avion2.jpg);
    height: 550px;
     width: 98%;
     margin: 10px;
@@ -657,4 +779,419 @@ margin-left: 20px;
       font-size: 30px;
       justify-content: center;
       font-family: 'Signika Negative', sans-serif;
+   }
+
+   .divindex2
+   {
+    background-repeat: no-repeat;
+    background-size: 1200px 600px;
+    background-color: #cccccc;
+    height: 1600px;
+     width: 98%;
+     margin: 10px;
+     margin-top: 15px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 30px;
+     box-shadow: 0px 5px 2px black;
+   }
+   .nombre
+   {
+      text-decoration:underline;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 4px 2px black;
+    color: rgb(173, 128, 45);
+    font-size: 60px;
+    margin-top: 20px;
+    font-family: 'Signika Negative', sans-serif;
+ width: 100%;
+   }
+   .dondeir
+   {
+      text-decoration:underline;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 4px 2px black;
+   color: rgb(173, 128, 45);
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: 'Signika Negative', sans-serif;
+ width: 100%;
+   }
+   hr{
+      padding: 3px;
+      margin-top: 15px;
+      margin-left: 300px ;
+      justify-content: center;
+      display: flex;
+      width: 50%;
+   }
+   .letrasprovincias
+   {
+      border-radius: 20px 0px;
+      background-color: rgba(33, 98, 25, 0.815);
+      padding: 10px;
+      border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 2px 1px black;
+    color: #eeeeee;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Signika Negative', sans-serif;
+    width: 63%;
+    margin: 15px;
+   }
+   
+  .fotosalta1{
+  border-radius: 20px;
+  margin-right: 20px;
+  float: right;
+  width: 380px;
+  height: 300px;
+  border: 2px solid black;
+  margin-top: 20px;
+   }
+
+  .fotosalta2{
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 300px;
+    border: 2px solid black;
+    margin-top: 30px;
+   }
+   
+  .fotosalta3{
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 300px;
+    border: 2px solid black;
+    margin-top: 20px;
+   }
+   .fotosalta4
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 200px;
+    border: 2px solid black;
+    margin-top: 0px;
+   }
+   .divindexcatamarca
+   {
+    background-repeat: no-repeat;
+    background-size: 1200px 600px;
+    background-color: #cccccc;
+    height: 1080px;
+     width: 98%;
+     margin: 10px;
+     margin-top: 15px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 30px;
+     box-shadow: 0px 5px 2px black;
+   }
+   .fotocatamarca1
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 250px;
+    border: 2px solid black;
+    margin-top: 20px;
+   }
+   .fotocatamarca2
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 200px;
+    border: 2px solid black;
+    margin-top: 0px;
+   }
+   .fotocatamarca3
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 300px;
+    border: 2px solid black;
+    margin-top: 10px;
+   }
+   .divindexsgo
+   {
+    background-repeat: no-repeat;
+    background-size: 1200px 600px;
+    background-color: #cccccc;
+    height: 1680px;
+     width: 98%;
+     margin: 10px;
+     margin-top: 15px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 30px;
+     box-shadow: 0px 5px 2px black;
+   }
+   .fotoestero1
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 200px;
+    border: 2px solid black;
+    margin-top: 10px;
+   }
+   .fotoestero2
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 250px;
+    border: 2px solid black;
+    margin-top: 50px;
+   }
+   .fotoestero3
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 270px;
+    border: 2px solid black;
+    margin-top: 60px;
+   }
+   .fotoestero4
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 270px;
+    border: 2px solid black;
+    margin-top: 50px;
+   }
+
+
+   .divindexchaco
+   {
+    background-repeat: no-repeat;
+    background-size: 1200px 600px;
+    background-color: #cccccc;
+    height: 1030px;
+     width: 98%;
+     margin: 10px;
+     margin-top: 15px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 30px;
+     box-shadow: 0px 5px 2px black;
+   }
+   .divindextucuman
+   {
+    background-repeat: no-repeat;
+    background-size: 1200px 600px;
+    background-color: #cccccc;
+    height: 1180px;
+     width: 98%;
+     margin: 10px;
+     margin-top: 15px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 30px;
+     box-shadow: 0px 5px 2px black;
+   }
+   .fototucuman1
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 190px;
+    border: 2px solid black;
+    margin-top: 5px;
+   }
+   .fototucuman2
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 250px;
+    border: 2px solid black;
+    margin-top: 0px;
+   }
+   .fototucuman3
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 250px;
+    border: 2px solid black;
+    margin-top: 0px;
+   }
+   .fototucuman4
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 250px;
+    border: 2px solid black;
+    margin-top: 0px;
+   }
+   .divindexjujuy
+   {
+    background-repeat: no-repeat;
+    background-size: 1200px 600px;
+    background-color: #cccccc;
+    height: 970px;
+     width: 98%;
+     margin: 10px;
+     margin-top: 15px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 30px;
+     box-shadow: 0px 5px 2px black;
+   }
+   .fotojujuy1
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 220px;
+    border: 2px solid black;
+    margin-top: 5px;
+   }
+   .fotojujuy2
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 260px;
+    border: 2px solid black;
+    margin-top: 5px;
+   }
+   .fotojujuy3
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 210px;
+    border: 2px solid black;
+    margin-top: 5px;
+   }
+   .fotochaco1
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 210px;
+    border: 2px solid black;
+    margin-top: 5px;
+   }
+   .fotochaco2
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 280px;
+    border: 2px solid black;
+    margin-top: 5px;
+   }
+   .fotochaco3
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 230px;
+    border: 2px solid black;
+    margin-top: 5px;
+   }
+   .divindexformosa
+   {
+    background-repeat: no-repeat;
+    background-size: 1200px 600px;
+    background-color: #cccccc;
+    height: 1500px;
+     width: 98%;
+     margin: 10px;
+     margin-top: 15px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 30px;
+     box-shadow: 0px 5px 2px black;
+   }
+   .fotoformosa1
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 200px;
+    border: 2px solid black;
+    margin-top: 5px;
+   }
+   .fotoformosa2
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 280px;
+    border: 2px solid black;
+    margin-top: 50px;
+   }
+   .fotoformosa3
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 250px;
+    border: 2px solid black;
+    margin-top: 70px;
+   }
+   .fotoformosa4
+   {
+   
+    border-radius: 20px;
+    margin-right: 20px;
+    float: right;
+   width: 380px;
+   height: 230px;
+    border: 2px solid black;
+    margin-top: 20px;
    }
