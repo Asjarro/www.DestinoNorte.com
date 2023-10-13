@@ -8,7 +8,7 @@ box-sizing: border-box ;
 }
 body{
    background-repeat: no-repeat;
-   background-image: url(/fotos/cielo.jpg);
+   background-image: url(fotos/cielo.jpg);
    background-size: 100%;
 }
  .headerindex{
@@ -263,7 +263,7 @@ align-items: center;
 {
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url(/fotos/avion2.jpg);
+  background-image: url(fotos/avion2.jpg);
   min-height: 550px;
   width: 98%;
   margin: 10px;
@@ -339,74 +339,6 @@ align-items: center;
   margin-top: 30px;
   width: 100%;
   font-size: 26px;
-  font-family: 'Signika Negative', sans-serif;
-}
-
-.form{
-  margin-right: 30px;
-  float: right;
-  background-color: #245e518c;
-  border-radius: 30px;
-  padding: 10px;
-  width: 25%;
-  border: #000000 2px solid;
-  box-shadow: 0px 3px 5px black;
-  margin-top: 30px;
-}
-
-.inicia{
-  background-color: rgba(61, 194, 212, 0.815);
-  font-family: 'Signika Negative', sans-serif;
-  font-size: 2vw;
-  display: flex;
-  justify-content: center;
-  color: #eeeeee;
-  text-shadow: -2px 2px 1px rgb(0, 0, 0);
-  border: 2px solid black;
-  border-radius: 30px;
-  margin-bottom: 10px;
-}
-
-.letrasform
-{
-  display: grid;
-  font-family: 'Signika Negative', sans-serif;
-  padding-left: 20px;
-  width: 30%;
-  color: #eeeeee;
-  font-size: 20px;
-  text-shadow: -2px 2px 1px rgb(0, 0, 0);
-  }
-
-.input1 {
-  border-radius: 0px 10px;
-  padding: 5px;
-  border: #000000 2px solid;
-  margin-bottom: 10px;
-  margin-top: 5px;
-  margin-left: 20px;
- width: 85%;
-}
-
-.input2{
-  padding: 5px;
-  border: #5f0d5f 3px solid;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 20px;
-  width: 30%;
-}
-
-.enviar {
-  margin: 10px auto;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 50px 50px;
-  border: 2px solid black;
-  display: block;
-  text-align: center;
-  background-color: #e4e4e4;
   font-family: 'Signika Negative', sans-serif;
 }
 
@@ -783,6 +715,163 @@ align-items: center;
       justify-content: center;
       font-family: 'Signika Negative', sans-serif;
    }
+
+.slider-container {
+  position: relative;
+  margin-top: 50px;
+}
+
+.slider{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 50px 50px;
+}
+.slider ul{
+  display: flex;
+  animation: cambio 20s infinite alternate linear;
+  width: 800%;
+}
+
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+
+.slider img{
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+
+.end{
+  align-items: center; 
+  text-align: center;
+}
+
+.form{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #245e518c;
+  border-radius: 30px;
+  padding: 10px;
+  width: 30vw;
+  border: #000000 2px solid;
+  box-shadow: 0px 3px 5px black;
+  z-index: 1;
+
+  margin-top: 5vw;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  z-index: 1;
+}
+
+.inicia{
+    background-color: rgba(30, 93, 34, 0.815);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    color: #eeeeee;
+    text-shadow: -2px 2px 1px rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+  
+.letrasform{
+    display: grid;
+    font-family: 'Signika Negative', sans-serif;
+    padding-left: 20px;
+    width: 30%;
+    color: #eeeeee;
+    font-size: 20px;
+    text-shadow: -2px 2px 1px rgb(0, 0, 0);
+  }
+  
+.input1{
+  border-radius: 0px 10px;
+  padding: 5px;
+  border: #000000 2px solid;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-left: 20px;
+  width: 85%;
+}
+  
+.enviar {
+    margin: 10px auto;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px 50px;
+    border: 2px solid black;
+    display: block;
+    text-align: center;
+    background-color: #e4e4e4;
+    font-family: 'Signika Negative', sans-serif;
+}
+.footer-div{
+  text-align: center;
+}
+
+.footer{
+  margin-top: 2.5vw;
+  background-color:rgb(4, 41, 4);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.ubication{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  margin-right:100%;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-bottom: 10px;display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+}
+
+.social-media {
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
 
    .divindex2
    {
@@ -1189,7 +1278,6 @@ align-items: center;
    }
    .fotoformosa4
    {
-   
     border-radius: 20px;
     margin-right: 20px;
     float: right;
