@@ -12,7 +12,7 @@ body{
 
   background-image: linear-gradient( to bottom right,
    #ffffff,
-   #bef9b4);
+   #dde87c);
 
   background-size: 200% 200%;
   animation: movimiento 4s linear infinite alternate;
@@ -457,6 +457,7 @@ align-items: center;
   width: 100%;
   font-size: 26px;
   font-family: 'Signika Negative', sans-serif;
+  margin-bottom: 25px;
 }
 
 .contenido {
