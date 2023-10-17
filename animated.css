@@ -1,0 +1,98 @@
+/*AVIONES EN FONDO*/
+
+.avion {
+    font-size: 3vw;
+    color: rgb(74, 150, 221);
+
+    position: absolute;
+    bottom: -15%;
+    z-index: -1;
+
+    animation: avioncitos 7s linear infinite;
+}
+
+.avion:nth-child(1) {
+    font-size: 4vw;
+    color: rgb(173, 128, 45);
+
+    position: absolute;
+    bottom: -80%;
+    z-index: -1;
+
+    animation: avioncitos 7s linear infinite;
+}
+
+.avion:nth-child(2) {
+    font-size: 7.5vw;
+    color: rgb(204, 31, 31);
+
+    position: absolute;
+    bottom: 15%;
+    z-index: -1;
+
+    animation: avioncitos 6.3s linear infinite;
+}
+
+.avion:nth-child(3) {
+    font-size: 3vw;
+    color: rgb(14, 120, 26);
+
+    position: absolute;
+    bottom: -40%;
+    z-index: -1;
+
+    animation: avioncitos 6s linear infinite;
+}
+
+@keyframes avioncitos {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.avion2 {
+    font-size: 3vw;
+    color: rgb(156, 189, 59);
+
+    position: absolute;
+    bottom: 0%;
+    z-index: -1;
+
+    animation: avioncitos2 3.4s linear infinite;
+}
+
+.avion2:nth-child(1) {
+    font-size: 5vw;
+    color: rgb(66, 87, 80);
+
+    position: absolute;
+    bottom: -25%;
+    z-index: -1;
+
+    animation: avioncitos2 5s linear infinite;
+}
+
+.avion2:nth-child(2) {
+    font-size: 2.2vw;
+    color: rgb(192, 44, 18);
+
+    position: absolute;
+    bottom: -64%;
+    z-index: -1;
+
+    animation: avioncitos2 8s linear infinite;
+}
+
+@keyframes avioncitos2 {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
